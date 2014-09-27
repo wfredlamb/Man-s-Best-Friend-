@@ -10,4 +10,13 @@
 
 @interface MBFViewController : UIViewController
 
+-(void)printHelloWorld;
+@property (strong, nonatomic) IBOutlet UIImageView *myImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *breedLabel;
+@property (strong, nonatomic) NSMutableArray *myDogs;
+@property (nonatomic) int currentIndex; 
+
+- (IBAction)newDogBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 @end
